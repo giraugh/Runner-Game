@@ -1,7 +1,7 @@
 spriteData = {
-  "example":{
-    "src":"gph/Example.png",
-    "width":32,
-    "height":32
+  "dino":{
+    "src":"spr/Dino.png",
+    "width":24,
+    "height":24
   }
 }
