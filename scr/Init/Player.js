@@ -1,8 +1,8 @@
 function initPlayer() {
    player = {
-      position: vector(0,0),
+      position: Vector(0,0),
       sprite: "dino",
-      x: function() {return this.position.v[0];},
-      y: function() {return this.position.v[1];}
+      x: function() {return this.position.x()},
+      y: function() {return this.position.y()}
    }
 }
