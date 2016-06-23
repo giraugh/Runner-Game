@@ -1,0 +1,3 @@
+function drawCactus(ctx) {
+
+}

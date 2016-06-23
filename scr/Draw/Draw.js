@@ -1,6 +1,14 @@
 function game_draw(ctx) {
-   game_update() //Update is not called, and so must be called before draw
 
+   //Update is not called by engine and so must be called in draw call
+   game_update()
+
+   //Disable Smoothing
+   ctx.imageSmoothingEnabled = false;
+   ctx.mozImageSmoothingEnabled = false;
+
+   //draw entities
    drawGround(ctx);
+   drawCactus(ctx);
    drawPlayer(ctx);
 }
