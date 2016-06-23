@@ -12,14 +12,19 @@ function initPlayer() {
       run: function() {
          this.sprite = (this.sprite == "dino.run.1") ? "dino.run.2" : "dino.run.1";
       },
-      startToRun: function() {
-         this.runId = window.setInterval(function() {player.run()},100);
+      stopRunning: function() {
+         window.clearInterval(this.runId);
+      },
+      startToRun: function(x) {
+         x = x || 100;
+         this.stopRunning();
+         this.runId = window.setInterval(function() {player.run()},x);
       },
       die: function(x) {
          x = x || 1;
          this.sprite = "dino.dead."+x;
          this.dead = true;
-         window.clearInterval(this.runId);
+         this.stopRunning();
       }
    }
 }
