@@ -1,6 +1,5 @@
 function drawPlayer(ctx) {
    let playerSprite = SL.Sprite(player.sprite);
-   let image = playerSprite.get();
-
-   ctx.drawImage(image,player.x(),player.y());
+   let args = playerSprite.getDrawArgs();
+   playerSprite.draw(player.x(),player.y(),ctx);
 }
