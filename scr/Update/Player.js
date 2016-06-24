@@ -7,7 +7,7 @@ function doPlayerPhysics() {
    player.position.add(player.velocity);
 
    //Clamp
-   if (player.y() >= 400) {
+   if (player.y() >= 400 && player.clamp) {
       player.position.y(400);
       player.velocity.v[1] = 0;
    }

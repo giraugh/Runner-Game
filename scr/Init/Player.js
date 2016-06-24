@@ -8,6 +8,7 @@ function initPlayer() {
       sprite: "dino.asleep",
       dead: false,
       runId: 0,
+      clamp: true,
       x: function() {return this.position.x()},
       y: function() {return this.position.y()},
       wakeUp: function() {
@@ -25,11 +26,16 @@ function initPlayer() {
          this.runId = window.setInterval(function() {player.run()},x);
       },
       die: function(x) {
-         x = x || 1;
-         this.sprite = "dino.dead."+x;
-         this.dead = true;
-         this.stopRunning();
-         ground.speed = 0;
+         if (!this.dead) {
+            x = x || 1;
+            this.sprite = "dino.dead."+x;
+            this.dead = true;
+            this.stopRunning();
+            ground.speed = 0;
+            this.clamp = false;
+            this.velocity.v[1] = 0;
+            this.velocity.addY(-20);
+         }
       }
    }
 }
