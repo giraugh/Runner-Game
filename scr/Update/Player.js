@@ -16,11 +16,11 @@ function doPlayerPhysics() {
 function doPlayerInput() {
 
    //Additional Gravity (if not holding up), creates dynamic jump
-   if (!Input.getKey("jump"))
+   if (!Input.getInput("jump"))
       player.velocity.add(player.additGravity);
 
    //Jumping
-   if (Input.getKey("jump") && player.y() == 400)
+   if (Input.getInput("jump") && player.y() == 400)
       player.velocity.addY(-player.jumpForce);
 }
 

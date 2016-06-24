@@ -1,3 +1,3 @@
 inputs = {
-   "jump": ["w"," "]
+   "jump": ["space","w","up"]
 }
