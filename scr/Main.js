@@ -9,5 +9,7 @@ SL.init(spriteData) //Data from obj/Sprites.js
 JSGMF.createCanvas();
 JSGMF.init();
 
+JSGMF.suppress(32);
+
 //Game Starting
 player.startToRun();
