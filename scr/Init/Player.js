@@ -1,6 +1,8 @@
 function initPlayer() {
    player = {
       position: Vector(250,400),
+      velocity: Vector(0,0),
+      gravity: Vector(0,8),
       sprite: "dino.asleep",
       dead: false,
       runId: 0,
