@@ -110,6 +110,17 @@ spriteData = {
  "frameSize": [34*2,70],
  "frameOffset": [34*1,0],
  "center": [0,112]
+},
+
+//GUI
+"gui.restart":{
+ "src":"spr/restart.png",
+ "width":72,
+ "height":64,
+ "scale": [2,2],
+ "frameSize": [72,64],
+ "frameOffset": [0,0],
+ "center": [72/2,64/2]
 }
 
 }
