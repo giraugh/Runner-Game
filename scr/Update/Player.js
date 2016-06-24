@@ -24,7 +24,19 @@ function doPlayerInput() {
       player.velocity.addY(-player.jumpForce);
 }
 
+function doCheckCollision() {
+   let playerShape = SL.Sprite(player.sprite).toShape(player.x(),player.y());
+   let cactusSprite = undefined;
+   for (let i=cactus.amount;i--;) {
+      let obj = cactus.cactuses[i];
+      cactusShape = SL.Sprite(obj.sprite).toShape(obj.position.x(), obj.position.y());
+      if (playerShape.overlaps(cactusShape))
+         player.die(1);
+   }
+}
+
 function updatePlayer() {
    doPlayerPhysics();
    doPlayerInput();
+   doCheckCollision();
 }

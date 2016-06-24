@@ -29,6 +29,7 @@ function initPlayer() {
          this.sprite = "dino.dead."+x;
          this.dead = true;
          this.stopRunning();
+         ground.speed = 0;
       }
    }
 }
