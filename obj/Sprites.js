@@ -6,7 +6,8 @@ spriteData = {
     "height":94,
     "scale": [1,1],
     "frameSize": [88,94],
-    "frameOffset": [88*0,0]
+    "frameOffset": [88*0,0],
+    "center": [0,0]
 },
 
   "dino.asleep":{
@@ -15,7 +16,8 @@ spriteData = {
     "height":94,
     "scale": [1,1],
     "frameSize": [88,94],
-    "frameOffset": [88*1,0]
+    "frameOffset": [88*1,0],
+    "center": [0,0]
 },
 
   "dino.run.1":{
@@ -24,7 +26,8 @@ spriteData = {
     "height":94,
     "scale": [1,1],
     "frameSize": [88,94],
-    "frameOffset": [88*2,0]
+    "frameOffset": [88*2,0],
+    "center": [0,0]
 },
 
   "dino.run.2":{
@@ -33,7 +36,8 @@ spriteData = {
     "height":94,
     "scale": [1,1],
     "frameSize": [88,94],
-    "frameOffset": [88*3,0]
+    "frameOffset": [88*3,0],
+    "center": [0,0]
 },
 
   "dino.dead.1":{
@@ -42,7 +46,8 @@ spriteData = {
     "height":94,
     "scale": [1,1],
     "frameSize": [88,94],
-    "frameOffset": [88*4,0]
+    "frameOffset": [88*4,0],
+    "center": [0,0]
 },
 
   "dino.dead.2":{
@@ -51,7 +56,8 @@ spriteData = {
     "height":94,
     "scale": [1,1],
     "frameSize": [88,94],
-    "frameOffset": [88*5,0]
+    "frameOffset": [88*5,0],
+    "center": [0,0]
 },
 
   //ground
@@ -61,7 +67,8 @@ spriteData = {
     "height":12,
     "scale": [1,1],
     "frameSize": [1200,12],
-    "frameOffset": [0,0]
+    "frameOffset": [0,0],
+    "center": [0,0]
 },
 
    //cactuses
@@ -71,7 +78,8 @@ spriteData = {
   "height":70,
   "scale": [2,2],
   "frameSize": [34*3,70],
-  "frameOffset": [34*2.2,0]
+  "frameOffset": [34*2.2,0],
+  "center": [0,70]
 },
 
 "cactus.2":{
@@ -80,7 +88,8 @@ spriteData = {
  "height":70,
  "scale": [2,2],
  "frameSize": [34*2.9,70],
- "frameOffset": [0,0]
+ "frameOffset": [0,0],
+ "center": [0,70]
 },
 
 "cactus.3":{
@@ -89,7 +98,8 @@ spriteData = {
  "height":70,
  "scale": [2,2],
  "frameSize": [34*1,70],
- "frameOffset": [0,0]
+ "frameOffset": [0,0],
+ "center": [0,112]
 },
 
 "cactus.4":{
@@ -98,7 +108,8 @@ spriteData = {
  "height":70,
  "scale": [2,2],
  "frameSize": [34*2,70],
- "frameOffset": [34*1,0]
+ "frameOffset": [34*1,0],
+ "center": [0,112]
 }
 
 }
