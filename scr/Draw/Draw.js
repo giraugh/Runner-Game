@@ -11,4 +11,5 @@ function game_draw(ctx) {
    drawGround(ctx);
    drawCactus(ctx);
    drawPlayer(ctx);
+   drawEndGUI(ctx);
 }
