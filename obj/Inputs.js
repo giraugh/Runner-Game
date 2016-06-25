@@ -3,6 +3,6 @@ Input.suppress("space","right","left","up","down","home","end","tab");
 
 //Define Inputs
 inputs = {
-   "jump": ["space","w","up","shift","z","x",",","."],
+   "jump": ["space","w","up","shift","z","x",",",".","lmb"],
    "continue": ["space","w","up","shift","z","x",",",".","enter","r","lmb"]
 }

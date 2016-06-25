@@ -74,12 +74,13 @@ spriteData = {
    //cactuses
  "cactus.1":{
   "src":"spr/cactuses2.png",
-  "width":34*3,
+  "width":34*2.2,
   "height":70,
   "scale": [2,2],
-  "frameSize": [34*3,70],
+  "frameSize": [34*2.2,70],
   "frameOffset": [34*2.2,0],
-  "center": [0,70]
+  "center": [0,70],
+  "shapeOffset": [17,30,-40,-70] //x,y,width,height
 },
 
 "cactus.2":{
@@ -89,7 +90,8 @@ spriteData = {
  "scale": [2,2],
  "frameSize": [34*2.9,70],
  "frameOffset": [0,0],
- "center": [0,70]
+ "center": [0,70],
+ "shapeOffset": [20,20,-40,-40] //x,y,width,height
 },
 
 "cactus.3":{
@@ -99,7 +101,8 @@ spriteData = {
  "scale": [2,2],
  "frameSize": [34*1,70],
  "frameOffset": [0,0],
- "center": [0,112]
+ "center": [0,112],
+ "shapeOffset": [10,30,-20,-30] //x,y,width,height
 },
 
 "cactus.4":{
@@ -109,7 +112,8 @@ spriteData = {
  "scale": [2,2],
  "frameSize": [34*2,70],
  "frameOffset": [34*1,0],
- "center": [0,112]
+ "center": [0,112],
+ "shapeOffset": [15,30,-30,-30] //x,y,width,height
 },
 
 //GUI
