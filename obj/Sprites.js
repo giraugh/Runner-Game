@@ -231,10 +231,10 @@ spriteData = {
  "src":"spr/text.png",
  "width":20,
  "height":11,
- "scale": [1,1],
+ "scale": [2,2],
  "frameSize": [20,11],
  "frameOffset": [100,0],
- "center": [10,5]
+ "center": [25,5]
 },
 
 "gui.gameover":{
