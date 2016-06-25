@@ -13,7 +13,7 @@ function drawDistance(ctx) {
    }
 
    //Convert Distance to Array of chars
-   let bd = Oven.getCookie("bestDistance") || 0;
+   let bd = +Oven.getCookie("bestDistance") || 0;
    let bdist = (""+bd).split("");
    for (let i=bdist.length;i--;) {
       let sprite = SL.Sprite("gui.text."+bdist[i]);
