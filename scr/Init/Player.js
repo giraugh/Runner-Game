@@ -3,7 +3,7 @@ function initPlayer() {
       position: Vector(250,400),
       velocity: Vector(0,0),
       gravity: Vector(0,0.5),
-      additGravity: Vector(0,0.3),
+      additGravity: Vector(0,0.9),
       jumpForce: 15,
       sprite: "dino.asleep",
       dead: false,

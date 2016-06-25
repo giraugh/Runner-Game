@@ -3,4 +3,5 @@ function game_update() {
    updateCactus();
    updatePlayer();
    updateEndGUI();
+   updateClouds();
 }

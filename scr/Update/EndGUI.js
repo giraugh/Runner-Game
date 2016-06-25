@@ -8,6 +8,7 @@ function updateEndGUI() {
          game_init();
          player.stopRunning();
          player.startToRun();
+         Input.deClick("left");
       }
    }
 

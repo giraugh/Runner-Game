@@ -3,4 +3,5 @@ function game_init() {
    initGround();
    initCactus();
    initEndGUI();
+   initClouds();
 }

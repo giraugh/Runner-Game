@@ -9,7 +9,9 @@ function game_draw(ctx) {
 
    //draw entities
    drawGround(ctx);
+   drawClouds(ctx);
    drawCactus(ctx);
    drawPlayer(ctx);
    drawEndGUI(ctx);
+   drawDistance(ctx);
 }

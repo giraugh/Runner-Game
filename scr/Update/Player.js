@@ -25,12 +25,13 @@ function doPlayerInput() {
 }
 
 function doCheckCollision() {
+   let futurePlayerShape = SL.Sprite(player.sprite).toShape(player.x()+player.velocity.x(),player.y()+player.velocity.y());
    let playerShape = SL.Sprite(player.sprite).toShape(player.x(),player.y());
    let cactusSprite = undefined;
    for (let i=cactus.amount;i--;) {
       let obj = cactus.cactuses[i];
       cactusShape = SL.Sprite(obj.sprite).toShape(obj.position.x(), obj.position.y());
-      if (playerShape.overlaps(cactusShape))
+      if (playerShape.overlaps(cactusShape) || futurePlayerShape.overlaps(cactusShape))
          player.die(1);
    }
 }
