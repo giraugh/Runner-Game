@@ -17,7 +17,7 @@ function updateGround() {
       ground.distance++;
 
    //Update Cookie with best distance
-   ground.bestDistance = (Oven.getCookie("bestDistance") || 0);
+   ground.bestDistance = (+Oven.getCookie("bestDistance") || 0);
    if (ground.distance > ground.bestDistance)
       Oven.setCookie("bestDistance",ground.distance);
 
