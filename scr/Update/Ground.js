@@ -10,7 +10,11 @@ function updateGround() {
 
    //Get Faster
    if (!player.dead)
-      ground.speed += 0.005;
+      if (ground.distance < 3200)
+         ground.speed += 0.005;
+
+   //Get Heavier
+   if (!player.dead)
       player.additGravity[1] += 0.003;
 
    if (!player.dead)
