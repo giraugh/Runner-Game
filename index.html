@@ -13,10 +13,11 @@
 
   <!--Link JS in footer as it edits the body-->
   <footer>
-    <script src="lib/JSGMF.js"></script>
-    <script src="lib/SpriteController.js"></script><script src="obj/Sprites.js"></script>
-    <script src="lib/Maths.js"></script>
-    <script src="lib/Inputs.js"></script>
+    <script src="lib/JSGMF.js"></script><!--Engine Core + Audio(Howler Audio Library)-->
+    <script src="lib/SpriteController.js"></script><script src="obj/Sprites.js"></script><!--Graphics Library-->
+    <script src="lib/Maths.js"></script> <!--Maths Library, Also includes Array functions. required by most libraries here-->
+    <script src="lib/Imperium.js"></script> <!--Gamepad Library, required by Inputs Library-->
+    <script src="lib/Inputs.js"></script> <!--Input Library, acts as a wrapper for JSGMF keyboard & mouse functionality-->
     <script src="lib/Oven.js"></script> <!--Cookie Library-->
 
     <script src="obj/Definitions.js"></script>
