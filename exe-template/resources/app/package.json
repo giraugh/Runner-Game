@@ -1,0 +1,11 @@
+{
+  "name": "hex",
+  "version": "1.0.0",
+  "description": "Make a HEX ai",
+  "main": "Main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT"
+}
